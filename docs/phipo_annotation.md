@@ -35,7 +35,7 @@ After selecting ‘OK’, you will begin the phenotype curation process for the 
 
 ### Pathogen-host interaction phenotypes
 
-To annotate a phenotype on a pathogen-host interaction (a metagenotype), go to the Metagenotype Management page and select ‘Annotate pathogen-host interaction phenotype’ from the list of actions next to the relevant metagenotype.
+To annotate a phenotype on a pathogen-host interaction (a metagenotype), go to the Metagenotype Management page and select either ‘Annotate pathogen-host interaction phenotype’ or ‘Annotate gene-for-gene phenotype’ from the list of actions next to the relevant metagenotype.
 
 ![](images/mg_annotation_link.png "")
 
@@ -144,6 +144,12 @@ PHI-Canto supports the following annotation extensions:
 * **Infected tissue:** relates a pathogen-host interaction to the tissue type (or anatomical region) where the interaction occurred. Terms describing the tissue types are specified by the [Brenda Tissue Ontology](https://brenda-enzymes.org/ontology.php?ontology_id=3).
 * **Infective ability:** relates a pathogen-host interaction phenotype with one of the set of high-level phenotype terms from PHI-base, and describes the overall change in factors like pathogenicity and virulence. For example, the phenotype ‘abolished pathogen penetration into host’ can be extended with ‘loss of pathogenicity’, such that the phenotype was an effect of a change in the infective ability of the pathogen.
 * **Disease caused:** relates an instance of a pathogen-host interaction with the disease that was expected to manifest. The disease names are taken from a small ontology specific to PHI-Canto.
+
+#### Gene-for-gene phenotype extensions
+
+* **Infected tissue:** relates a pathogen-host interaction to the tissue type (or anatomical region) where the interaction occurred. Terms describing the tissue types are specified by the [Brenda Tissue Ontology](https://brenda-enzymes.org/ontology.php?ontology_id=3).
+* **Compared to control genotype:** records a pathogen genotype and a host genotype (combined as a metagenotype) that are used as an experimental control for the genotypes in the interaction. Usually the control genotypes will be the wild-type genotypes of the pathogen and host, but they may also be mutant genotypes.
+* **Gene-for-gene interaction:** describes multiple properties of a gene-for-gene interaction, including: whether a gene conferring disease resistance in the host was molecule was present, absent, or compromised; the presence or absence of a pathogen effector molecule that can be recognized by the host; and whether the interaction caused disease in the host (a compatible interaction) or did not (an incompatible interaction).
 
 ## Editing, deleting and duplicating phenotypes
 
