@@ -44,9 +44,9 @@ Click the button to combine the selected genotypes into a multi-allele genotype.
 
 #### Using wild-type alleles in genotypes
 
-A wild-type gene at its normal (endogenous) expression level will generally not have phenotypes annotated in Canto. Single wild-type alleles should only have phenotypes if the gene is expressed at a higher (overexpression) or lower (knockdown) level than normal. Similarly, in a multi-allele genotype, if the wild-type allele is the only allele of the gene present, it should only be included if it is over- or under-expressed.
+A wild-type gene at its normal (endogenous) expression level will generally not have phenotypes annotated in PHI-Canto. Single wild-type alleles should only have phenotypes if the gene is expressed at a higher (overexpression) or lower (knockdown) level than normal. Similarly, in a multi-allele genotype, if the wild-type allele is the only allele of the gene present, it should only be included if it is over- or under-expressed.
 
-Although it is possible to add a wild-type gene as a single allele with wild-type expression, this is intended only for the case of ‘gene-for-gene relationships’ within a pathogen-host interaction: in these cases, a control genotype and phenotype need to be recorded in order to disambiguate naturally-occurring phenotypes (caused by strain sequence variation in the natural strain) from experimental phenotypes (caused by mutations introduced by the author).
+Wild-type genes (as a single allele with wild-type expression) should only be used in a _control metagenotype_ that corresponds to a pathogen-host interaction (including gene-for-gene interactions): in these cases, a control genotype and phenotype need to be recorded in order to disambiguate naturally-occurring phenotypes (caused by strain sequence variation in the natural strain) from experimental phenotypes (caused by mutations introduced by the author).
 
 ### Editing and copying genotypes
 
@@ -77,6 +77,8 @@ Note: If a single allele has a background, the background will be included with 
 The _metagenotype_ is an abstract concept that combines a pathogen genotype with a host genotype: it is the underlying genotype of a pathogen–host interaction. Metagenotypes are annotated with _pathogen–host interaction phenotypes_.
 
 Metagenotypes are created by combining genotypes: a pathogen genotype and a host genotype are selected, then combined to form a new metagenotype. In Canto, you can create metagenotypes by following the Metagenotype Management link on the curation summary page or the Genotype Management page.
+
+To curate a pathogen-host interaction (including gene-for-gene interactions), you should first create a _control metagenotype_, which contains the control genotypes for the pathogen and the host. The control genotypes will usually, but not always, contain wild-type alleles of the genes of interest. After the control metagenotype is created, you should create another metagenotype that describes mutant alleles within either the pathogen genotype, host genotype, or both genotypes simultaneously (the experimental metagenotype can be linked to the control metagenotype by way of an annotation extension, which is described in [Curating phenotypes](phipo_annotation#annotation_extensions)).
 
 ![](images/genotype_nav_links.png "")
 
