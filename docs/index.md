@@ -9,6 +9,8 @@
     * [Gene Ontology annotations](go_annotation)
     * [Protein modification](modification_annotation)
     * [Physical interaction](physical_interaction_annotation)
+    * [RNA level](gene_expression)
+    * [Protein level](gene_expression)
 * Annotating genotypes
     * [Pathogen phenotype](phipo_annotation#single_species_phenotypes)
     * [Host phenotype](phipo_annotation#single_species_phenotypes)
