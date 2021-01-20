@@ -95,7 +95,7 @@ Once you have entered all the data for your annotation, you will see a confirmat
 
 ![](images/single_species_annotation.png "")
 
-For pathogen-host interaction phenotypes, the preview will look like this:
+For pathogen-host interaction phenotypes and gene-for-gene phenotypes, the preview will look like this:
 
 ![](images/phi_annotation.png "")
 

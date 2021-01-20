@@ -110,9 +110,11 @@ Selecting a host strain has the intent of describing an interaction between the 
 
 Each row of the metagenotype table (shown at the bottom of the Metagenotype Management page) has links for common actions:
 
-![](images/metagenotype_row.png "")
+![](images/mg_annotation_link.png "")
 
 **Annotate pathogen-host interaction phenotype:** begin the workflow to create a pathogen-host interaction phenotype annotation (see ‘[Curating phenotypes](phipo_annotation#pathogen_host_interaction_phenotypes)’ for more details). After completing an annotation, you will be taken to the metagenotype details page.
+
+**Annotate gene-for-gene phenotype:** begin the workflow to create a gene-for-gene interaction phenotype annotation (see ‘[Curating phenotypes](phipo_annotation#pathogen_host_interaction_phenotypes)’ for more details). After completing an annotation, you will be taken to the metagenotype details page.
 
 **View phenotype annotations:** show a details page for the selected metagenotype, plus any phenotype annotations associated with the metagenotype. You can edit, copy and edit, or delete phenotype annotations on this page. New phenotype annotations can be created by following the link in the ‘Actions’ section.
 
