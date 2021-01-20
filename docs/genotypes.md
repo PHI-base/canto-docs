@@ -54,7 +54,7 @@ When you mouse over any genotype in either table, a set of options appears in a 
 
 ![](images/genotype_actions.png "")
 
-**Start a pathogen / host phenotype annotation:** begins the workflow to add a pathogen or host phenotype for the selected genotype. See the help documentation for ‘Curating phenotypes’ for more details.
+**Start a pathogen / host phenotype annotation:** begins the workflow to add a pathogen or host phenotype for the selected genotype (see ‘[Curating phenotypes](phipo_annotation#single_species_phenotypes)’ for more details).
 
 **View annotations:** links to a page that shows details for the selected genotype, plus any phenotype annotations associated with the genotype. Links are available to edit the details of the selected genotype, or to quickly create an additional genotype using the copy and edit function (by following the ‘Duplicate’ link). Links are also available to edit existing annotations on the selected genotype (Edit); create new annotations based on existing ones (Copy and edit); or remove existing annotations (Delete). You can also create new phenotype annotations by following the link in the ‘Actions’ section.
 
@@ -112,7 +112,7 @@ Each row of the metagenotype table (shown at the bottom of the Metagenotype Mana
 
 ![](images/metagenotype_row.png "")
 
-**Annotate pathogen-host interaction phenotype:** begin the workflow to create a pathogen-host interaction phenotype annotation (see ‘Curating phenotypes’ for more details). After completing an annotation, you will be taken to the metagenotype details page.
+**Annotate pathogen-host interaction phenotype:** begin the workflow to create a pathogen-host interaction phenotype annotation (see ‘[Curating phenotypes](phipo_annotation#pathogen_host_interaction_phenotypes)’ for more details). After completing an annotation, you will be taken to the metagenotype details page.
 
 **View phenotype annotations:** show a details page for the selected metagenotype, plus any phenotype annotations associated with the metagenotype. You can edit, copy and edit, or delete phenotype annotations on this page. New phenotype annotations can be created by following the link in the ‘Actions’ section.
 
