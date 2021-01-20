@@ -112,9 +112,9 @@ Each row of the metagenotype table (shown at the bottom of the Metagenotype Mana
 
 ![](images/mg_annotation_link.png "")
 
-**Annotate pathogen-host interaction phenotype:** begin the workflow to create a pathogen-host interaction phenotype annotation (see ‘[Curating phenotypes](phipo_annotation#pathogen_host_interaction_phenotypes)’ for more details). After completing an annotation, you will be taken to the metagenotype details page.
+**Annotate pathogen-host interaction phenotype:** begin the workflow to create a pathogen-host interaction phenotype annotation (see ‘[Curating phenotypes](phipo_annotation#pathogen_host_interaction_phenotypes)’ for more details). After completing the annotation, you will be taken to the metagenotype details page.
 
-**Annotate gene-for-gene phenotype:** begin the workflow to create a gene-for-gene interaction phenotype annotation (see ‘[Curating phenotypes](phipo_annotation#pathogen_host_interaction_phenotypes)’ for more details). After completing an annotation, you will be taken to the metagenotype details page.
+**Annotate gene-for-gene phenotype:** begin the workflow to create a gene-for-gene interaction phenotype annotation (see ‘[Curating phenotypes](phipo_annotation#pathogen_host_interaction_phenotypes)’ for more details). After completing the annotation, you will be taken to the metagenotype details page.
 
 **View phenotype annotations:** show a details page for the selected metagenotype, plus any phenotype annotations associated with the metagenotype. You can edit, copy and edit, or delete phenotype annotations on this page. New phenotype annotations can be created by following the link in the ‘Actions’ section.
 
