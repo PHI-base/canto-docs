@@ -44,9 +44,9 @@ Click the button to combine the selected genotypes into a multi-allele genotype.
 
 #### Using wild-type alleles in genotypes
 
-A wild-type gene at its normal (endogenous) expression level will generally not have phenotypes annotated in PHI-Canto. Single wild-type alleles should only have phenotypes if the gene is expressed at a higher (overexpression) or lower (knockdown) level than normal. Similarly, in a multi-allele genotype, if the wild-type allele is the only allele of the gene present, it should only be included if it is over- or under-expressed.
+Generally speaking, a wild-type gene at its normal (endogenous) expression level should not be annotated with a phenotype unless the gene is expressed at a higher level (overexpression) or lower level (knockdown) than normal. Additionally, wild-type genes with normal expression should not be included in multi-allele genotypes unless they are over- or under-expressed.
 
-Wild-type genes (as a single allele with wild-type expression) should only be used in a _control metagenotype_ that corresponds to a pathogen-host interaction (including gene-for-gene interactions): in these cases, a control genotype and phenotype need to be recorded in order to disambiguate naturally-occurring phenotypes (caused by strain sequence variation in the natural strain) from experimental phenotypes (caused by mutations introduced by the author).
+Wild-type genes with normal expression level may be used in a metagenotype, but only where the metagenotype is used as an experimental control for a pathogen-host interaction (a control metagenotype). The control metagenotype, and its corresponding phenotype, are necessary to disambiguate naturally-occurring phenotypes (caused by strain sequence variation in the natural strain) from experimental phenotypes (caused by mutations introduced by the author). Note that in PHI-Canto, the normal expression level is called the 'wild type product level' when creating an allele.
 
 ### Editing and copying genotypes
 
