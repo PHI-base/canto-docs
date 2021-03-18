@@ -28,17 +28,20 @@ Annotations with PHIDO should be as specific as possible to describe the data fr
 
 ![](images/new_term_suggest.png "")
 
+### Finalizing the annotation
+
+
+For pathogen-host interaction phenotypes and gene-for-gene phenotypes, the preview will look like this:
+
+![](images/phi_annotation.png "")
+
+### Figure and table numbers
+
+The confirmation page includes a text box for including the Figure or Table number related to the annotation. Please prefix figure numbers with 'Figure' and table numbers with 'Table'. Prefix supplementary figure and table numbers with an 'S', for example: 'Figure S1'.
+
 ### Annotation comments
 
-Once you have entered all the data for your annotation, you will see a confirmation page that shows a preview of your annotation before it is created:
-
-![](images/disease_annotation_preview.png "")
-
-The confirmation page also has a text box where you can add additional information as a comment on each annotation. We recommend that comments include the following information (where applicable):
-
-* figure or table numbers;
-* whether an annotation has been made to a control genotype or control experiment;
-* any details that do not fit the available evidence codes.
+The confirmation page also has a text box where you can add additional information as a comment on each annotation. We recommend that comments include any details that do not fit the available evidence codes.
 
 The data in the comments section will not be shown on the PHI-base website; the comments are intended to facilitate the checking of a session by the approval team (PHI-base and carefully selected species experts) prior to approval of the curated session.
 
