@@ -53,7 +53,7 @@ If your initial search does not find any suitable terms, try again with a broade
 
 ![](images/child_term_suggest.png "")
 
-PHIPO terms are organised in a hierarchical structure, and PHIPO annotations should be as specific as possible to describe the data from your experiment. You can will have the opportunity to request a new term if the most specific term available does not describe your gene product adequately: select the ‘Suggest a new child term’ link and fill in the form that is shown:.
+PHIPO terms are organised in a hierarchical structure, and PHIPO annotations should be as specific as possible to describe the data from your experiment. You will have the opportunity to request a new term if the most specific term available does not describe your gene product adequately: select the ‘Suggest a new child term’ link and fill in the form that is shown:
 
 ![](images/new_term_suggest.png "")
 
@@ -133,7 +133,7 @@ It is not possible to edit an existing extension; instead, you must delete the e
 
 ![](images/delete_annotation_extension.png "")
 
-PHI-Canto supports the following annotation extensions:
+PHI-Canto supports the following extensions for phenotype annotations:
 
 #### Pathogen or Host phenotype extensions
 
@@ -165,9 +165,9 @@ PHI-Canto supports the following annotation extensions:
 
 ![](images/transfer_annotation.png "")
 
-**Copy and edit:** this link allows you to make a new annotation to the same allele or genotype. For example, you may want to indicate that you have observed a phenotype under more than one set of conditions, e.g. at both standard and high temperatures. The interface works the same way as for editing an annotation, except that a new annotation is created, and the old annotation is retained without changes.
+**Copy and edit:** this link allows you to copy an annotation to another genotype or metagenotype, or to create a new annotation with minor edits on the same genotype or metagenotype. For example, you may want to indicate that you have observed a phenotype under more than one set of conditions, e.g. at both standard and high temperatures. The interface works the same way as editing an annotation, except that a new annotation is created, and the old annotation is retained without changes.
 
-On the curation summary page, you can use ‘Copy and edit’ to copy an annotation to any other genotype in the genotype list, by selecting another genotype in the ‘Genotype’ field. This differs from the ‘Transfer’ action in that you can edit the annotation before copying it.
+The ‘Copy and edit’ action differs from the ‘Transfer’ action in that you can edit the annotation before copying it.
 
 ![](images/change_annotation_genotype.png "")
 
