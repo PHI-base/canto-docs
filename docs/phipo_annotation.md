@@ -123,7 +123,7 @@ You can add multiple extension types to one annotation, but be aware that this h
 
 If the extensions did _not_ occur together (for example, if different tissues were infected in two separate experiments, rather than both infected at once), then you should apply the extensions to separate annotations. You can use ‘Copy and edit’ on an annotation to speed up the process of adding individual extensions: finish the first annotation with one extension, copy-and-edit to create another annotation, then edit the extensions on the new annotation.
 
-In all cases, the actual relation name used by the database will appear when you have finished the annotation plus extensions.
+After adding an annotation extension, the extension name shown in annotation tables (and elsewhere) will be a more concise unique identifier.
 
 When you edit or duplicate an annotation, you can also add more extensions, or remove existing extensions. Use the ‘Edit…’ button in the annotation editing pop-up to do this:
 

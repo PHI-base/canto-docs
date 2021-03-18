@@ -55,7 +55,7 @@ Select an extension type to show a pop-up where you can specify the required det
 
 ![](images/disease_annotation_extensions.png "")
 
-In all cases, the actual relation name used by the database will appear when you have finished the annotation plus extensions.
+After adding an annotation extension, the extension name shown in annotation tables (and elsewhere) will be a more concise unique identifier.
 
 When you edit or duplicate an annotation, you can also add more extensions, or remove existing extensions. Use the ‘Edit…’ button in the annotation editing pop-up to do this:
 
