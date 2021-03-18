@@ -24,7 +24,7 @@ Next, to find a PHIDO term, type text into the search box. When suggestions from
 
 If your initial search does not find any suitable terms, try again with a broader term (e.g. ‘blight’ or ‘bacterial’). Selecting a term takes you to a page where you can read the definition to confirm that it is applicable.
 
-Annotations with PHIDO should be as specific as possible to describe the data from your experiment. You will have the opportunity to request a new term if the most specific term available does not describe your gene product adequately: select the ‘Suggest a new child term’ link and fill in the form that is shown:
+Annotations with PHIDO should be as specific as possible to describe the data from your experiment. You can request a new term if the most specific term available does not adequately describe your disease. Select the ‘Suggest a new child term’ link and fill in the form that is shown:
 
 ![](images/new_term_suggest.png "")
 

@@ -53,7 +53,7 @@ If your initial search does not find any suitable terms, try again with a broade
 
 ![](images/child_term_suggest.png "")
 
-PHIPO terms are organised in a hierarchical structure, and PHIPO annotations should be as specific as possible to describe the data from your experiment. You will have the opportunity to request a new term if the most specific term available does not describe your gene product adequately: select the ‘Suggest a new child term’ link and fill in the form that is shown:
+PHIPO terms are organized in a hierarchical structure, and annotations with PHIPO should be as specific as possible to describe the data from your experiment. You can request a new term if the most specific term available does not adequately describe your disease. Select the ‘Suggest a new child term’ link and fill in the form that is shown:
 
 ![](images/new_term_suggest.png "")
 
