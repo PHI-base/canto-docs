@@ -3,6 +3,7 @@ import glob
 import markdown
 import os
 import re
+from inspect import cleandoc
 
 import lxml.html, lxml.etree
 
@@ -23,17 +24,19 @@ def generate_heading_ids(html):
     )
 
 def link_html_images(html):
-    image_tmpl = '\n'.join((
-        '<div class="row-fluid">',
-        '<div class="span6">',
-        '<a href="<% $c->uri_for($image_path . \'/{image}\') %>"/>' \
-        '<img class="screenshot"' \
-        ' src="<% $c->uri_for($image_path . \'/{image}\') %>"' \
-        ' alt=""/>' \
-        '</a>',
-        '</div>',
-        '</div>'
-    ))
+    image_link_elem = (
+        '<a href="<% $c->uri_for($image_path . "/{image}") %>"/>'
+        '<img class="screenshot"'
+        ' src="<% $c->uri_for($image_path . "/{image}") %>'
+        ' alt=""/>'
+    )
+    image_tmpl = cleandoc("""
+    <div class="row-fluid">
+    <div class="span6">
+    {image_link}
+    </div>
+    </div>
+    """.format(image_link=image_link_elem))
     image_re = re.compile(
         r'<p><img alt="" src="images/(?P<image>\w+\.png)" title=""\s*/?></p>'
     )
@@ -48,19 +51,15 @@ def link_html_images(html):
     return '\n'.join(out_lines)
 
 def add_catalyst_markup(html):
-
-    def process_template(tmpl):
-        return re.sub(r'^\s+', '', tmpl, flags=re.MULTILINE).rstrip()
-    
-    template = process_template("""
-        <!-- PAGE_TITLE: @@name@@ Documentation -->
-        <!-- FLAGS: use_bootstrap -->
-        {body}
-        <%init>
-        my $config = $c->config();
-        my $base_docs_path = $config->{{base_docs_path}};
-        my $image_path = '/static/images/' . $base_docs_path;
-        </%init>
+    template = cleandoc("""
+    <!-- PAGE_TITLE: @@name@@ Documentation -->
+    <!-- FLAGS: use_bootstrap -->
+    {body}
+    <%init>
+    my $config = $c->config();
+    my $base_docs_path = $config->{{base_docs_path}};
+    my $image_path = '/static/images/' . $base_docs_path;
+    </%init>
     """)
     return template.format(body=html)
 
