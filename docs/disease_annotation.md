@@ -10,7 +10,7 @@ When using PHIDO terms – or terms from any ontology – always pay careful att
 
 To annotate a disease on a pathogen-host interaction (a metagenotype), go to the Metagenotype Management page and select ‘Annotate disease name’ from the list of actions next to the relevant metagenotype.
 
-![](images/mg_control_annotation_link.png "")
+![](images/disease_annotation_link.png "")
 
 Note that you must first have created a metagenotype; see [Creating alleles and genotypes](genotypes) for instructions.
 
@@ -37,6 +37,8 @@ Once you have entered all the data for your annotation, you will see a confirmat
 ### Figure and table numbers
 
 The confirmation page includes a text box for including the Figure or Table number related to the annotation. Please prefix figure numbers with ‘Figure’ and table numbers with ‘Table’. Prefix supplementary figure and table numbers with an ‘S’, for example: ‘Figure S1’.
+
+![](images/figure_number_field.png "")
 
 ### Annotation comments
 
