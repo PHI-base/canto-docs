@@ -36,7 +36,7 @@ Once you have entered all the data for your annotation, you will see a confirmat
 
 ### Figure and table numbers
 
-The confirmation page includes a text box for including the Figure or Table number related to the annotation. Please prefix figure numbers with 'Figure' and table numbers with 'Table'. Prefix supplementary figure and table numbers with an 'S', for example: 'Figure S1'.
+The confirmation page includes a text box for including the Figure or Table number related to the annotation. Please prefix figure numbers with ‘Figure’ and table numbers with ‘Table’. Prefix supplementary figure and table numbers with an ‘S’, for example: ‘Figure S1’.
 
 ### Annotation comments
 
