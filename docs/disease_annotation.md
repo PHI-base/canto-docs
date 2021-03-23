@@ -30,10 +30,9 @@ Annotations with PHIDO should be as specific as possible to describe the data fr
 
 ### Finalizing the annotation
 
+Once you have entered all the data for your annotation, you will see a confirmation page that shows a preview of your annotation before it is created. The annotation preview will look like this:
 
-For pathogen-host interaction phenotypes and gene-for-gene phenotypes, the preview will look like this:
-
-![](images/phi_annotation.png "")
+![](images/disease_annotation.png "")
 
 ### Figure and table numbers
 
