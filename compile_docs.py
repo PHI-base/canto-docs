@@ -120,9 +120,14 @@ def main():
     docs_input_dir = os.path.join(file_dir, 'docs')
 
     output_dir = os.path.join(file_dir, 'build')
+    if not os.path.exists(output_dir):
+        os.mkdir(output_dir)
 
     image_input_dir = os.path.join(docs_input_dir, 'images')
+
     image_output_dir = os.path.join(output_dir, 'images')
+    if not os.path.exists(image_output_dir):
+        os.mkdir(image_output_dir)
 
     make_mhtml_from_md(docs_input_dir, output_dir)
     make_images(image_input_dir, image_output_dir)
