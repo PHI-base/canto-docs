@@ -41,7 +41,7 @@ def link_html_images(html):
         ' src="<% $c->uri_for($image_path . "/{image}") %>'
         ' alt=""/>'
     )
-    image_tmpl = cleandoc("""
+    image_template = cleandoc("""
     <div class="row-fluid">
     <div class="span6">
     {image_link}
@@ -56,7 +56,7 @@ def link_html_images(html):
         match = image_re.match(line)
         if match:
             image_name = match.group('image')
-            out_lines.append(image_tmpl.format(image=image_name))
+            out_lines.append(image_template.format(image=image_name))
         else:
             out_lines.append(line)
     return '\n'.join(out_lines)
