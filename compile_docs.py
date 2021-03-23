@@ -6,6 +6,7 @@ import re
 from inspect import cleandoc
 
 import lxml.html, lxml.etree
+import PythonMagick
 
 def newer_than(path1, path2):
     return os.stat(path1).st_mtime > os.stat(path2).st_mtime
@@ -13,6 +14,12 @@ def newer_than(path1, path2):
 def get_filename(path, ext=True):
     basename = os.path.basename(path)
     return basename if ext else os.path.splitext(basename)[0]
+
+def make_image(src, dst):
+    image = PythonMagick.Image(src)
+    image.quantizeColors(32)
+    image.quantizeDither(False)
+    image.write(dst)
 
 def generate_heading_ids(html):
     heading_tags = {'h1', 'h2', 'h3'}
@@ -98,6 +105,15 @@ def make_mhtml_from_md(in_dir, out_dir):
         with open(out_path, **write_args) as mhtml_file:
             mhtml_file.write(mhtml_doc + '\n')
 
+def make_images(in_dir, out_dir):
+    image_files = glob.glob(os.path.join(in_dir, '*.png'))
+    for image_path in image_files:
+        src = image_path
+        image_filename = get_filename(image_path)
+        dst = os.path.join(out_dir, image_filename)
+        if not os.path.exists(dst) or not newer_than(src, dst):
+            make_image(src, dst)
+
 def main():
 
     file_dir = os.path.abspath(os.path.dirname(__file__))
@@ -105,7 +121,11 @@ def main():
 
     output_dir = os.path.join(file_dir, 'build')
 
+    image_input_dir = os.path.join(docs_input_dir, 'images')
+    image_output_dir = os.path.join(output_dir, 'images')
+
     make_mhtml_from_md(docs_input_dir, output_dir)
+    make_images(image_input_dir, image_output_dir)
 
 if __name__ == '__main__':
     main()
