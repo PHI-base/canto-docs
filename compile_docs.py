@@ -67,18 +67,12 @@ def add_catalyst_markup(html):
     """)
     return template.format(body=html)
 
-def main():
+def make_mhtml_from_md(in_dir, out_dir):
+    markdown_paths = glob.glob(os.path.join(in_dir, '*.md'))
 
-    file_dir = os.path.abspath(os.path.dirname(__file__))
-    docs_path = os.path.join(file_dir, 'docs')
-    markdown_files = glob.glob(os.path.join(docs_path, '*.md'))
-
-    for markdown_file in markdown_files:
-
-        markdown_path = os.path.join(docs_path, markdown_file)
-
-        with open(markdown_path, encoding='utf8') as f:
-            markdown_doc = f.read()
+    for markdown_path in markdown_paths:
+        with open(markdown_path, encoding='utf8') as markdown_file:
+            markdown_doc = markdown_file.read()
 
         pipeline = (
             markdown.markdown,
@@ -94,16 +88,24 @@ def main():
 
         markdown_filename = get_filename(markdown_path, ext=False)
         mhtml_filename = markdown_filename + '.mhtml'
-        output_dir = os.path.join(file_dir, 'build')
-        mhtml_out_path = os.path.join(output_dir, mhtml_filename)
+        out_path = os.path.join(out_dir, mhtml_filename)
 
         write_args = {
             'mode': 'w+',
             'encoding': 'utf8',
             'newline': '\n'
         }
-        with open(mhtml_out_path, **write_args) as mhtml_file:
+        with open(out_path, **write_args) as mhtml_file:
             mhtml_file.write(mhtml_doc + '\n')
+
+def main():
+
+    file_dir = os.path.abspath(os.path.dirname(__file__))
+    docs_input_dir = os.path.join(file_dir, 'docs')
+
+    output_dir = os.path.join(file_dir, 'build')
+
+    make_mhtml_from_md(docs_input_dir, output_dir)
 
 if __name__ == '__main__':
     main()
