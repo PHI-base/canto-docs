@@ -28,27 +28,7 @@ Annotations with PHIDO should be as specific as possible to describe the data fr
 
 ![](images/new_term_suggest.png "")
 
-### Finalizing the annotation
-
-Once you have entered all the data for your annotation, you will see a confirmation page that shows a preview of your annotation before it is created. The annotation preview will look like this:
-
-![](images/disease_annotation.png "")
-
-### Figure and table numbers
-
-The confirmation page includes a text box for including the Figure or Table number related to the annotation. Please prefix figure numbers with ‘Figure’ and table numbers with ‘Table’. Prefix supplementary figure and table numbers with an ‘S’, for example: ‘Figure S1’.
-
-![](images/figure_number_field.png "")
-
-### Annotation comments
-
-The confirmation page also has a text box where you can add additional information as a comment on each annotation. We recommend that comments include any details that do not fit the available evidence codes.
-
-The data in the comments section will not be shown on the PHI-base website; the comments are intended to facilitate the checking of a session by the approval team (PHI-base and carefully selected species experts) prior to approval of the curated session.
-
-Once you select ‘OK’ on this screen, your annotation will be saved. You can then either make further annotations, pause the session and come back to it later, or submit the completed curation session for approval.
-
-## Annotation extensions
+### Annotation extensions
 
 You can add annotation extensions to provide additional specificity for PHIDO annotations (see below for specific examples). After you have selected an ontology term and evidence, the PHI-Canto interface will display a list of available extension types.
 
@@ -73,6 +53,26 @@ It is not possible to edit an existing extension; instead, you must delete the e
 PHI-Canto supports the following extensions for disease annotations:
 
 * **Host tissue infected:** relates a disease annotation to the tissue type (or anatomical region) where the disease occurred. Terms describing the tissue types are specified by the [Brenda Tissue Ontology](https://brenda-enzymes.org/ontology.php?ontology_id=3).
+
+### Finalizing the annotation
+
+Once you have entered all the data for your annotation, you will see a confirmation page that shows a preview of your annotation before it is created. The annotation preview will look like this:
+
+![](images/disease_annotation.png "")
+
+### Figure and table numbers
+
+The confirmation page includes a text box for including the Figure or Table number related to the annotation. Please prefix figure numbers with ‘Figure’ and table numbers with ‘Table’. Prefix supplementary figure and table numbers with an ‘S’, for example: ‘Figure S1’.
+
+![](images/figure_number_field.png "")
+
+### Annotation comments
+
+The confirmation page also has a text box where you can add additional information as a comment on each annotation. We recommend that comments include any details that do not fit the available evidence codes.
+
+The data in the comments section will not be shown on the PHI-base website; the comments are intended to facilitate the checking of a session by the approval team (PHI-base and carefully selected species experts) prior to approval of the curated session.
+
+Once you select ‘OK’ on this screen, your annotation will be saved. You can then either make further annotations, pause the session and come back to it later, or submit the completed curation session for approval.
 
 ## Editing, deleting and duplicating disease annotations
 
