@@ -10,6 +10,10 @@ import lxml.html, lxml.etree
 def newer_than(path1, path2):
     return os.stat(path1).st_mtime > os.stat(path2).st_mtime
 
+def get_filename(path, ext=True):
+    basename = os.path.basename(path)
+    return basename if ext else os.path.splitext(basename)[0]
+
 def generate_heading_ids(html):
     heading_tags = {'h1', 'h2', 'h3'}
     fragments = lxml.html.fragments_fromstring(html)
@@ -88,7 +92,7 @@ def main():
             markdown_doc
         )
 
-        markdown_filename = os.path.splitext(os.path.basename(markdown_file))[0]
+        markdown_filename = get_filename(markdown_path, ext=False)
         mhtml_filename = markdown_filename + '.mhtml'
         output_dir = os.path.join(file_dir, 'build')
         mhtml_out_path = os.path.join(output_dir, mhtml_filename)
