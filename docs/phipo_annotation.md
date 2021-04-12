@@ -53,7 +53,7 @@ If your initial search does not find any suitable terms, try again with a broade
 
 ![](images/child_term_suggest.png "")
 
-PHIPO terms are organised in a hierarchical structure, and PHIPO annotations should be as specific as possible to describe the data from your experiment. You can will have the opportunity to request a new term if the most specific term available does not describe your gene product adequately: select the ‘Suggest a new child term’ link and fill in the form that is shown:.
+PHIPO terms are organized in a hierarchical structure, and annotations with PHIPO should be as specific as possible to describe the data from your experiment. You can request a new term if the most specific term available does not adequately describe your disease. Select the ‘Suggest a new child term’ link and fill in the form that is shown:
 
 ![](images/new_term_suggest.png "")
 
@@ -123,7 +123,7 @@ You can add multiple extension types to one annotation, but be aware that this h
 
 If the extensions did _not_ occur together (for example, if different tissues were infected in two separate experiments, rather than both infected at once), then you should apply the extensions to separate annotations. You can use ‘Copy and edit’ on an annotation to speed up the process of adding individual extensions: finish the first annotation with one extension, copy-and-edit to create another annotation, then edit the extensions on the new annotation.
 
-In all cases, the actual relation name used by the database will appear when you have finished the annotation plus extensions.
+After adding an annotation extension, the extension name shown in annotation tables (and elsewhere) will be a more concise unique identifier.
 
 When you edit or duplicate an annotation, you can also add more extensions, or remove existing extensions. Use the ‘Edit…’ button in the annotation editing pop-up to do this:
 
@@ -133,7 +133,7 @@ It is not possible to edit an existing extension; instead, you must delete the e
 
 ![](images/delete_annotation_extension.png "")
 
-PHI-Canto supports the following annotation extensions:
+PHI-Canto supports the following extensions for phenotype annotations:
 
 #### Pathogen or Host phenotype extensions
 
@@ -165,9 +165,9 @@ PHI-Canto supports the following annotation extensions:
 
 ![](images/transfer_annotation.png "")
 
-**Copy and edit:** this link allows you to make a new annotation to the same allele or genotype. For example, you may want to indicate that you have observed a phenotype under more than one set of conditions, e.g. at both standard and high temperatures. The interface works the same way as for editing an annotation, except that a new annotation is created, and the old annotation is retained without changes.
+**Copy and edit:** this link allows you to copy an annotation to another genotype or metagenotype, or to create a new annotation with minor edits on the same genotype or metagenotype. For example, you may want to indicate that you have observed a phenotype under more than one set of conditions, e.g. at both standard and high temperatures. The interface works the same way as editing an annotation, except that a new annotation is created, and the old annotation is retained without changes.
 
-On the curation summary page, you can use ‘Copy and edit’ to copy an annotation to any other genotype in the genotype list, by selecting another genotype in the ‘Genotype’ field. This differs from the ‘Transfer’ action in that you can edit the annotation before copying it.
+The ‘Copy and edit’ action differs from the ‘Transfer’ action in that you can edit the annotation before copying it.
 
 ![](images/change_annotation_genotype.png "")
 

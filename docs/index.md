@@ -17,6 +17,7 @@
 * Annotating metagenotypes
     * [Pathogen-host interaction phenotype](phipo_annotation#pathogen_host_interaction_phenotypes)
     * [Gene-for-gene phenotype](phipo_annotation#pathogen_host_interaction_phenotypes)
+    * [Disease name](disease_annotation)
 * [Experimental evidence](phipo_annotation#experimental_evidence)
 * [Experimental conditions](phipo_annotation#experimental_conditions)
 * [Annotation extensions](phipo_annotation#annotation_extensions)
