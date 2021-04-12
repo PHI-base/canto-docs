@@ -38,8 +38,9 @@ def link_html_images(html):
     image_link_elem = (
         '<a href="<% $c->uri_for($image_path . "/{image}") %>"/>'
         '<img class="screenshot"'
-        ' src="<% $c->uri_for($image_path . "/{image}") %>'
+        ' src="<% $c->uri_for($image_path . "/{image}") %>"'
         ' alt=""/>'
+        '</a>'
     )
     image_template = cleandoc("""
     <div class="row-fluid">
