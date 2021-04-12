@@ -4,6 +4,8 @@
 
 PHI-Canto allows curation of infectious diseases that result from pathogen–host interactions. An infectious disease is defined as ‘a disorder resulting from the presence and activity of a microbial, viral, fungal, or parasitic agent […] transmitted by direct or indirect contact.’ ([NCIT:C26726](http://purl.obolibrary.org/obo/NCIT_C26726)) PHI-Canto supports annotation of disease names on metagenotypes (a combination of pathogen and host genotype), using terms from the [PHI-base Disease Ontology](https://github.com/PHI-base/phido) (PHIDO).
 
+Each metagenotype containing a wild type gene should be annotated with at least one disease annotation (assuming a disease name is known). Diseases should only be annotated on pathogen–host interactions where the disease is present: that is, with a susceptible host strain and a compatible pathogen strain. The host must also be a natural host for the pathogen (i.e. not a model host). The annotated tissue type should correspond to where the disease is normally expected to be observed: for example, _Fusarium ear blight_ would normally be observed on an _inflorescence_ ([BTO:0000628](http://purl.obolibrary.org/obo/BTO_0000628)).
+
 When using PHIDO terms – or terms from any ontology – always pay careful attention to the term definitions. They are usually more detailed, and often more informative, than the term names alone. For each annotation, ensure that the definition of the selected term accurately describes the experiment you are trying to capture, and that the results shown in the paper fit all parts of the term definition.
 
 ## Starting a disease annotation
