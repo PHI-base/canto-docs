@@ -54,7 +54,7 @@ It is not possible to edit an existing extension; instead, you must delete the e
 
 PHI-Canto supports the following extensions for disease annotations:
 
-* **Host tissue infected:** relates a disease annotation to the tissue type (or anatomical region) where the disease occurred. Terms describing the tissue types are specified by the [Brenda Tissue Ontology](https://brenda-enzymes.org/ontology.php?ontology_id=3).
+* **Host tissue infected:** relates a disease annotation to the tissue type (or anatomical region) where the disease occurred. Terms describing the tissue types are specified by the [BRENDA Tissue Ontology](https://brenda-enzymes.org/ontology.php?ontology_id=3).
 
 ### Finalizing the annotation
 
