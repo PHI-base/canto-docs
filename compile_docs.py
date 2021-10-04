@@ -6,7 +6,7 @@ import re
 
 import lxml.html, lxml.etree
 import markdown
-import PythonMagick
+from PIL import Image
 
 def newer_than(path1, path2):
     return os.stat(path1).st_mtime > os.stat(path2).st_mtime
@@ -16,10 +16,10 @@ def get_filename(path, ext=True):
     return basename if ext else os.path.splitext(basename)[0]
 
 def make_image(src, dst):
-    image = PythonMagick.Image(src)
-    image.quantizeColors(32)
-    image.quantizeDither(False)
-    image.write(dst)
+    with Image.open(src, formats=['PNG']) as img:
+        img.convert(mode='RGB') \
+           .quantize(colors=32, dither='NONE') \
+           .save(dst, 'PNG')
 
 def generate_heading_ids(html):
     heading_tags = {'h1', 'h2', 'h3'}
