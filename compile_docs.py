@@ -1,11 +1,11 @@
 import functools
 import glob
-import markdown
+from inspect import cleandoc
 import os
 import re
-from inspect import cleandoc
 
 import lxml.html, lxml.etree
+import markdown
 import PythonMagick
 
 def newer_than(path1, path2):
