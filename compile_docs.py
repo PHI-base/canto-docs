@@ -83,7 +83,7 @@ def make_mhtml_from_md(in_dir, out_dir):
             markdown_doc = markdown_file.read()
 
         pipeline = (
-            markdown.markdown,
+            lambda md: markdown.markdown(md, extensions=['tables']),
             generate_heading_ids,
             link_html_images,
             add_catalyst_markup
