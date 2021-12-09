@@ -7,7 +7,7 @@ We recommend that you only annotate interactions that you think are biologically
 
 When you choose 'Physical interaction', a popup appears with a dropdown menu for the organism(s) involved in the interaction. To curate an intraspecies (or intra-organism) interaction, you can select the same organism in both fields. After selecting the first organism, the rest of the form fields will appear, including a text field for optional comments.
 
-Choose the gene for the first organism in the 'Gene' field and the gene for the interacting organism in the 'Interacting gene' field. Choose an evidence type from the 'Interaction type' dropdown menu. Some evidence types have a brief description that indicates their directionality. Further information on evidence supporting physical interactions, including examples of experiment types in each category, is available on the BioGRID help wiki and in the Directionality section below.
+Choose the gene for the first organism in the 'Gene' field and the gene for the interacting organism in the 'Interacting gene' field. Choose an evidence type from the 'Interaction type' dropdown menu. Some evidence types have a brief description that indicates their directionality. Further information on evidence supporting physical interactions, including examples of experiment types in each category, is available on the [BioGRID help wiki](https://wiki.thebiogrid.org/doku.php/experimental_systems) and in the Directionality section below.
 
 Click 'OK' to finish the annotation and close the popup. An example of a completed physical interaction annotation is shown below.
 
