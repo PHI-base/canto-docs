@@ -5,7 +5,7 @@ If you have physical interactions to curate, please read the Directionality sect
 
 We recommend that you only annotate interactions that you think are biologically meaningful. For example, do not include known or suspected contaminants from mass spectrometry results (e.g. ribosomal proteins, translation factors, 'sticky' proteins).
 
-When you choose 'Physical interaction', a popup appears with a dropdown menu for the organism(s) involved in the interaction. To curate an intraspecies (or intra-organism) interaction, you can select the same organism in both fields. After selecting the first organism, the rest of the form fields will appear, including a text field for optional comments.
+When you choose 'Physical interaction', a popup appears with a dropdown menu for the organism(s) involved in the interaction. To curate an interspecies interaction, select different organisms for each field. To curate an intraspecies (or intra-organism) interaction, select the same organism in both fields. Note that only organisms of the species added to the curation session can be selected. After selecting the first organism, the rest of the form fields will appear, including a text field for optional comments.
 
 Choose the gene for the first organism in the 'Gene' field and the gene for the interacting organism in the 'Interacting gene' field. Choose an evidence type from the 'Interaction type' dropdown menu. Some evidence types have a brief description that indicates their directionality. Further information on evidence supporting physical interactions, including examples of experiment types in each category, is available on the [BioGRID help wiki](https://wiki.thebiogrid.org/doku.php/experimental_systems) and in the Directionality section below.
 
