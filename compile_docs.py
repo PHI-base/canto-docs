@@ -75,6 +75,11 @@ def add_catalyst_markup(html):
     """)
     return template.format(body=html)
 
+def add_table_classes(html):
+    table_re = re.compile(r'<table>')
+    repl = '<table class="table table-striped table-bordered table-condensed">'
+    return table_re.sub(repl, html)
+
 def make_mhtml_from_md(in_dir, out_dir):
     markdown_paths = glob.glob(os.path.join(in_dir, '*.md'))
 
@@ -83,9 +88,10 @@ def make_mhtml_from_md(in_dir, out_dir):
             markdown_doc = markdown_file.read()
 
         pipeline = (
-            markdown.markdown,
+            lambda md: markdown.markdown(md, extensions=['tables']),
             generate_heading_ids,
             link_html_images,
+            add_table_classes,
             add_catalyst_markup
         )
         mhtml_doc = functools.reduce(
