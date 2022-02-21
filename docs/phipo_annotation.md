@@ -73,6 +73,7 @@ Conditions are aspects of the experimental setup that may be relevant to various
 
 * Minimal medium vs. rich medium
 * Agar plates vs. liquid medium
+* Delivery mechanism (e.g. agrobacterium, heterologous organism, pathogen inoculation)
 * Addition of certain chemicals; for instance, in a salt stress experiment it may be of interest to note what salts were added. (Note that in cases where the PHIPO term already describes sensitivity or resistance to a certain chemical, it is not necessary to specify that same chemical in the experimental conditions.)
 * Temperature (high, standard or low).
 * Exclusion of some chemicals that one might normally expect to be present.
