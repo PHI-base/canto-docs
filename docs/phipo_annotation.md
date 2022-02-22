@@ -41,7 +41,11 @@ To annotate a phenotype on a pathogen-host interaction (a metagenotype), go to t
 
 Note that you must first have created a metagenotype; see [Creating alleles and genotypes](genotypes) for instructions.
 
-**Please note** that if you are curating a pathogen effector within a pathogen–host interaction, it is essential that you also make a GO Biological Process annotation on the pathogen gene involved in the interaction, using the GO term "effector-mediated modulation of host process by symbiont" ([GO:0140418](http://purl.obolibrary.org/obo/GO_0140418)) or one of its child terms. This will allow the data to be displayed correctly in PHI-base. Where the molecular function of the effector is known, you will also need to annotate a GO Molecular Function on the pathogen gene and then add a 'part_of' annotation extension containing the GO:0140418 term or any of its child terms. See the instructions for [Gene Ontology Annotation](go_annotation) for further guidance on making a GO Biological process annotation.
+#### Curating pathogen effectors
+
+If you are curating a pathogen effector within a pathogen–host interaction, it is essential that you also make a GO Biological Process annotation on the pathogen gene involved in the interaction, using the GO term "effector-mediated modulation of host process by symbiont" ([GO:0140418](http://purl.obolibrary.org/obo/GO_0140418)) or one of its child terms. This will allow the data to be displayed correctly in PHI-base.
+
+Where the molecular function of the effector is known, you will also need to annotate a GO Molecular Function on the pathogen gene. This molecular function annotation must have a 'part_of' annotation extension that links to GO:0140418 or any of its child terms. See the instructions for Gene Ontology Annotation for further guidance on making GO annotations.
 
 ## The phenotype curation process
 
