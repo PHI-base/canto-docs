@@ -6,6 +6,8 @@ A phenotype is any observable characteristic or trait of an organism that result
 
 When using PHIPO terms – or terms from any ontology – always pay careful attention to the term definitions. They are usually more detailed, and often more informative, than the term names alone. For each annotation, ensure that the definition of the selected term accurately describes the experiment you are trying to capture, and that the results shown in the paper fit all parts of the term definition.
 
+If you want to browse terms in PHIPO, you can use any of the term browsers linked to from PHIPO's page on the [OBO Foundry](https://obofoundry.org/ontology/phipo) (for example, OntoBee or OLS). The OBO Foundry also provides downloads of PHIPO in OWL and OBO formats.
+
 ## Starting a phenotype annotation
 
 ### Single-species phenotypes
