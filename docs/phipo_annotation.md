@@ -53,7 +53,9 @@ Where the molecular function of the effector is known, you will also need to ann
 
 ### Selecting a PHIPO term
 
-Next, to find a PHIPO term, type text into the search box. When suggestions from the autocomplete feature appear, choose one and proceed.
+PHIPO consists of two branches: a single-species branch, which includes phenotypes associated with either pathogen or host species in isolation; and a pathogen-host interaction branch, which includes phenotypes associated with the outcomes of pathogen-host interactions. Pathogen genotypes can be annotated with single-species phenotype terms, such as 'sexual spores absent' and 'decreased hyphal growth', as well as chemistry phenotypes, such as 'resistance to voriconazole', 'sensitive to voriconazole', and 'normal growth on voriconazole'. Host genotypes can also be annotated with single-species terms, such as 'presence of effector-independent host hypersensitive response'. Metagenotypes can be annotated with pathogen-host interaction phenotype terms, such as 'absence of pathogen growth on host surface' and 'stunted host growth during pathogen colonization'. Note that some terms in the pathogen-host branch describe changes in the pathogen, while other terms describe changes in the host.
+
+To find a PHIPO term, type text into the search box. When suggestions from the autocomplete feature appear, choose one and proceed.
 
 ![](images/phenotype_search.png "")
 
