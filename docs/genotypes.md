@@ -78,8 +78,6 @@ The _metagenotype_ is an abstract concept that combines a pathogen genotype with
 
 Metagenotypes are created by combining genotypes: a pathogen genotype and a host genotype are selected, then combined to form a new metagenotype. In Canto, you can create metagenotypes by following the Metagenotype Management link on the curation summary page or the Genotype Management page.
 
-To curate a pathogen-host interaction (including gene-for-gene interactions), you should first create a _control metagenotype_, which contains the control genotypes for the pathogen and the host. The control genotypes will usually, but not always, contain wild-type alleles of the genes of interest. After the control metagenotype is created, you should create another metagenotype that describes mutant alleles within either the pathogen genotype, host genotype, or both genotypes simultaneously (the experimental metagenotype can be linked to the control metagenotype by way of an annotation extension, which is described in [Curating phenotypes](phipo_annotation#annotation_extensions)).
-
 ![](images/genotype_nav_links.png "")
 
 Since every metagenotype requires a pathogen and host genotype, you cannot access the Metagenotype Management page until you have created at least one pathogen genotype (the wild-type host genotypes are always available by default).
@@ -105,6 +103,14 @@ Host organisms may have no alleles (and therefore no genotypes). In this case, t
 ![](images/wt_strain_picker.png "")
 
 Selecting a host strain has the intent of describing an interaction between the wild-type host (of the specified strain) with some mutant pathogen. It is not necessary to select the strain for a mutant genotype, because this strain information is always embedded in the mutant genotype itself.
+
+#### Creating control metagenotypes
+
+Before annotating a metagenotype with a pathogen-host interaction phenotype (or gene-for-gene phenotype), you should first create a _control metagenotype_, which contains the control genotypes for the pathogen and the host. The control genotypes will usually, but not always, contain wild-type alleles of the genes of interest.
+
+After the control metagenotype is created, you should create another metagenotype that describes mutant alleles within either the pathogen genotype, host genotype, or both genotypes simultaneously (the experimental metagenotype can be linked to the control metagenotype by way of an annotation extension, which is described in [Curating phenotypes](phipo_annotation#annotation_extensions)). 
+
+Please note there may be cases where it is not possible to create a control metagenotype: for example, where an empty vector (without a pathogen gene) is infiltrated into a plant leaf as a control experiment.
 
 ### Managing metagenotypes
 
