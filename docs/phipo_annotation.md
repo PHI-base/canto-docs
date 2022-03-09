@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A phenotype is any observable characteristic or trait of an organism that results from the interactions between its genotype and the environment. PHI-Canto supports annotation of single- and multi-allele phenotypes on pathogen genotypes, host genotypes and metagenotypes (pathogen and host genotype), using PHIPO terms and additional useful details such as evidence and experimental conditions.
+A phenotype is any observable characteristic or trait of an organism that results from the interactions between its genotype and the environment. PHI-Canto supports annotation of single- and multi-allele phenotypes on pathogen genotypes, host genotypes and metagenotypes (pathogen and host genotype), using terms from PHIPO (the Pathogen-Host Interaction Phenotype Ontology) and additional useful details such as evidence and experimental conditions.
 
 When using PHIPO terms – or terms from any ontology – always pay careful attention to the term definitions. They are usually more detailed, and often more informative, than the term names alone. For each annotation, ensure that the definition of the selected term accurately describes the experiment you are trying to capture, and that the results shown in the paper fit all parts of the term definition.
 
