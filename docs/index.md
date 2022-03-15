@@ -14,8 +14,10 @@
 * Annotating genotypes
     * [Pathogen phenotype](phipo_annotation#single_species_phenotypes)
     * [Host phenotype](phipo_annotation#single_species_phenotypes)
+    * [The phenotype curation process](phipo_annotation#the_phenotype_curation_process)
 * Annotating metagenotypes
     * [Pathogen-host interaction phenotype](phipo_annotation#pathogen_host_interaction_phenotypes)
+    * [The phenotype curation process](phipo_annotation#the_phenotype_curation_process)
     * [Gene-for-gene phenotype](phipo_annotation#pathogen_host_interaction_phenotypes)
     * [Disease name](disease_annotation)
 * [Experimental evidence](phipo_annotation#experimental_evidence)
