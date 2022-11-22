@@ -22,7 +22,7 @@ def make_image(src, dst):
            .save(dst, 'PNG')
 
 def generate_heading_ids(html):
-    heading_tags = {'h1', 'h2', 'h3'}
+    heading_tags = {'h1', 'h2', 'h3', 'h4'}
     fragments = lxml.html.fragments_fromstring(html)
     for element in fragments:
         if element.tag in heading_tags:
